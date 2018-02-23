@@ -1513,6 +1513,12 @@ textarea.form-control {
     position: relative;
     z-index: 2; }
 
+#palestrantes .card .card-body {
+  padding-bottom: 0 !important; }
+
+#palestrantes .card .card-footer {
+  padding-top: 0 !important; }
+
 .from-check,
 .form-check-radio {
   margin-bottom: 12px;
