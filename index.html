@@ -50,8 +50,13 @@
 					<li class="nav-item">
 						<a class="nav-link" href="index.html#evento" data-scroll="true" href="javascript:void(0)">Evento</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="index.html#keynotes" data-scroll="true" href="javascript:void(0)">Keynotes</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Programacao</a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
+                            <a class="dropdown-item" href="index.html#programacao"><i class="nc-icon nc-tile-56"></i>&nbsp; Programação</a>
+                            <a class="dropdown-item" href="index.html#keynotes"><i class="nc-icon nc-tile-56"></i>&nbsp; Keynotes</a>
+                            <a class="dropdown-item" href="index.html#palestrantes"><i class="nc-icon nc-tile-56"></i>&nbsp; Palestrantes</a>
+                        </ul>
 					</li>
 					<li class="nav-item">
 						<a class="btn btn-round btn-success" href="https://dmtphp.io/inscricao" target="_blank">
@@ -233,399 +238,792 @@
         </div>
     </div>
 
-        <div class="team-1 section-gray" id="palestrantes" >
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto text-center">
-                        <h2 class="title">NOSSAS ROCKSTARS PHP</h2>
-                    </div>
+    <div class="team-1 section-gray" id="palestrantes" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 ml-auto mr-auto text-center">
+                    <h2 class="title">NOSSAS ROCKSTARS PHP</h2>
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/daianealvesrj" target="_blank"><img src="assets/img/faces/Daiane-Alves.jpg" alt="Daiane Alves"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Daiane Alves</h4>
-                                        <h6 class="card-category text-muted">Analista de Sistemas na Lyseon Tech e Organizadora PHPRio / PHPWomenRJ</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/daianealvesrj" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/daianealvesrj" target="_blank"><img src="assets/img/faces/Daiane-Alves.jpg" alt="Daiane Alves"></a>
                         </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/raph_almeida" target="_blank"><img src="assets/img/faces/Raphael-de-Almeida.jpg" alt="Raphael de Almeida"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Raphael de Almeida</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedor Fullstack e Community manager PHPRio</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/raph_almeida" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Daiane Alves</h4>
+                                    <h6 class="card-category text-muted">Analista de Sistemas na Lyseon Tech e Organizadora PHPRio / PHPWomenRJ</h6>
+                                </div>
+                            </a>
                         </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/tifannyknox" target="_blank"><img src="assets/img/faces/Danubia-Barreto.jpg" alt="Danubia Barreto"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Danubia Barreto</h4>
-                                        <h6 class="card-category text-muted">CEO &amp; Founder na SysForU </h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/tifannyknox" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/philipeph3" target="_blank"><img src="assets/img/faces/Philipe-Almeida.jpg" alt="Philipe Almeida"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Philipe Almeida</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedor PHP na Engesoftware e Pesquisador na Universidade de Brasília - UNB</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/philipeph3" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/jucycabrera" target="_blank"><img src="assets/img/faces/Juciellen-Cabrera.jpg" alt="Juciellen Cabrera"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Juciellen Cabrera</h4>
-                                        <h6 class="card-category text-muted">Analista de Sistemas na 4Linux | Rankdone</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/jucycabrera" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/alonsoemacao" target="_blank"><img src="assets/img/faces/Vinicius-Alonso.jpg" alt="Vinicius Alonso"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Vinicius Alonso</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedor Backend na CompuFácil</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/alonsoemacao" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/KaFernandes1989" target="_blank"><img src="assets/img/faces/Camila-Fernandes.jpg" alt="Camila Fernandes"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Camila Fernandes</h4>
-                                        <h6 class="card-category text-muted">Programadora PHP na 4Linux</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/KaFernandes1989" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/vcampitelli" target="_blank"><img src="assets/img/faces/Vinicius-Campitelli.jpg" alt="Vinicius Campitelli"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Vinicius Campitelli</h4>
-                                        <h6 class="card-category text-muted">Coordenador de desenvolvimento na Mediapost</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/vcampitelli" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/magodoy88" target="_blank"><img src="assets/img/faces/Marcela-Godoy.jpg" alt="Marcela Godoy"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Marcela Godoy</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedora backend na Eduzz</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/magodoy88" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/pokemaobr" target="_blank"><img src="assets/img/faces/Rodrigo-Cardoso.jpg" alt="Rodrigo Pokemao Cardoso"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Rodrigo "Pokemao" Cardoso</h4>
-                                        <h6 class="card-category text-muted">Community Manager na iMaster</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/pokemaobr" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/merydutra" target="_blank"><img src="assets/img/faces/Mariana-Nassar.jpg" alt="Mariana Nassar"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Mariana Nassar</h4>
-                                        <h6 class="card-category text-muted">Analista de sistemas na Infobase</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/merydutra" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/wilcorrea" target="_blank"><img src="assets/img/faces/William-Correa.jpg" alt="William Correa"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">William Correa</h4>
-                                        <h6 class="card-category text-muted">Engenheiro de Software na Fagoc</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/wilcorrea" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/daianealvesrj" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/thebeaoliveira" target="_blank"><img src="assets/img/faces/Beatriz-Oliveira.jpg" alt="Beatriz Oliveira"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Beatriz Oliveira</h4>
-                                        <h6 class="card-category text-muted">Analista de Sistemas na Oi</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/thebeaoliveira" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/raph_almeida" target="_blank"><img src="assets/img/faces/Raphael-de-Almeida.jpg" alt="Raphael de Almeida"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Raphael de Almeida</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedor Fullstack e Community manager PHPRio</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/raph_almeida" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/junior_grossi" target="_blank"><img src="assets/img/faces/Junior-Grossi.jpg" alt="Junior Grossi"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Junior Grossi</h4>
-                                        <h6 class="card-category text-muted">Software Engineer na InterNACHI e Organizador do PHPMG</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/junior_grossi" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/cynthiazanoni" target="_blank"><img src="assets/img/faces/Cynthia-Zanoni.jpg" alt="Cynthia Zanoni"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Cynthia Zanoni</h4>
-                                        <h6 class="card-category text-muted">Full Stack e PM Latam na Microsoft</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/cynthiazanoni" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/leonnleite" target="_blank"><img src="assets/img/faces/Leonn-Leite.jpg" alt="Leonn Leite"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Leonn Leite</h4>
-                                        <h6 class="card-category text-muted">Lider Tecnico PHP - Engesoftware</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/leonnleite" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/marcelgsantos" target="_blank"><img src="assets/img/faces/Marcel-Santos.jpg" alt="Marcel dos Santos"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Marcel dos Santos</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedor Web Full-Stack / Evangelista PHPSP</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/marcelgsantos" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/tifannyknox" target="_blank"><img src="assets/img/faces/Danubia-Barreto.jpg" alt="Danubia Barreto"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Danubia Barreto</h4>
+                                    <h6 class="card-category text-muted">CEO &amp; Founder na SysForU </h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/tifannyknox" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/JonataWeber" target="_blank"><img src="assets/img/faces/Jonata-Weber.jpg" alt="Jonata Weber"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Jonata Weber</h4>
-                                        <h6 class="card-category text-muted">Desenvolvedor Web na Impulso Network</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/JonataWeber" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/philipeph3" target="_blank"><img src="assets/img/faces/Philipe-Almeida.jpg" alt="Philipe Almeida"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Philipe Almeida</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedor PHP na Engesoftware e Pesquisador na Universidade de Brasília - UNB</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/philipeph3" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
-
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <img src="assets/img/faces/Bruno-Souza.jpg" alt="Bruno Souza">
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Bruno Souza</h4>
-                                        <h6 class="card-category text-muted">Analista de Sistemas Pleno</h6>
-                                    </div>
-                                </a>
-                            </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/jucycabrera" target="_blank"><img src="assets/img/faces/Juciellen-Cabrera.jpg" alt="Juciellen Cabrera"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Juciellen Cabrera</h4>
+                                    <h6 class="card-category text-muted">Analista de Sistemas na 4Linux | Rankdone</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/jucycabrera" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
+                </div>
 
-                    <div class="col-md-3">
-                        <div class="card card-profile card-plain">
-                            <div class="card-avatar">
-                                <a href="https://twitter.com/weckx" target="_blank"><img src="assets/img/faces/Felipe-Weckx.png" alt="Felipe Weckx"></a>
-                            </div>
-                            <div class="card-body">
-                                <a href="#paper-kit">
-                                    <div class="author">
-                                        <h4 class="card-title">Felipe Weckx</h4>
-                                        <h6 class="card-category text-muted">CTO na LAB3 DVLP</h6>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="card-footer text-center">
-                                <a href="https://twitter.com/weckx" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            </div>
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/alonsoemacao" target="_blank"><img src="assets/img/faces/Vinicius-Alonso.jpg" alt="Vinicius Alonso"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Vinicius Alonso</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedor Backend na CompuFácil</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/alonsoemacao" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/KaFernandes1989" target="_blank"><img src="assets/img/faces/Camila-Fernandes.jpg" alt="Camila Fernandes"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Camila Fernandes</h4>
+                                    <h6 class="card-category text-muted">Programadora PHP na 4Linux</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/KaFernandes1989" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/vcampitelli" target="_blank"><img src="assets/img/faces/Vinicius-Campitelli.jpg" alt="Vinicius Campitelli"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Vinicius Campitelli</h4>
+                                    <h6 class="card-category text-muted">Coordenador de desenvolvimento na Mediapost</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/vcampitelli" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/magodoy88" target="_blank"><img src="assets/img/faces/Marcela-Godoy.jpg" alt="Marcela Godoy"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Marcela Godoy</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedora backend na Eduzz</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/magodoy88" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/pokemaobr" target="_blank"><img src="assets/img/faces/Rodrigo-Cardoso.jpg" alt="Rodrigo Pokemao Cardoso"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Rodrigo "Pokemao" Cardoso</h4>
+                                    <h6 class="card-category text-muted">Community Manager na iMaster</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/pokemaobr" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/merydutra" target="_blank"><img src="assets/img/faces/Mariana-Nassar.jpg" alt="Mariana Nassar"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Mariana Nassar</h4>
+                                    <h6 class="card-category text-muted">Analista de sistemas na Infobase</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/merydutra" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/wilcorrea" target="_blank"><img src="assets/img/faces/William-Correa.jpg" alt="William Correa"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">William Correa</h4>
+                                    <h6 class="card-category text-muted">Engenheiro de Software na Fagoc / Organizador do PHP ZM e Analista na Lyseon Tech</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/wilcorrea" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/thebeaoliveira" target="_blank"><img src="assets/img/faces/Beatriz-Oliveira.jpg" alt="Beatriz Oliveira"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Beatriz Oliveira</h4>
+                                    <h6 class="card-category text-muted">Analista de Sistemas na Oi</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/thebeaoliveira" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/junior_grossi" target="_blank"><img src="assets/img/faces/Junior-Grossi.jpg" alt="Junior Grossi"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Junior Grossi</h4>
+                                    <h6 class="card-category text-muted">Software Engineer na InterNACHI e Organizador do PHPMG</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/junior_grossi" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/SanMagaNerd" target="_blank"><img src="assets/img/faces/Fernanda-Martin.jpg" alt="Fernanda N San Martin"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Fernanda N San Martin</h4>
+                                    <h6 class="card-category text-muted">Analista de segurança da informação</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/SanMagaNerd" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/leonnleite" target="_blank"><img src="assets/img/faces/Leonn-Leite.jpg" alt="Leonn Leite"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Leonn Leite</h4>
+                                    <h6 class="card-category text-muted">Lider Tecnico PHP - Engesoftware</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/leonnleite" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/cynthiazanoni" target="_blank"><img src="assets/img/faces/Cynthia-Zanoni.jpg" alt="Cynthia Zanoni"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Cynthia Zanoni</h4>
+                                    <h6 class="card-category text-muted">Full Stack e PM Latam na Microsoft</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/cynthiazanoni" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/marcelgsantos" target="_blank"><img src="assets/img/faces/Marcel-Santos.jpg" alt="Marcel dos Santos"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Marcel dos Santos</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedor Web Full-Stack / Evangelista PHPSP</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/marcelgsantos" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/JonataWeber" target="_blank"><img src="assets/img/faces/Jonata-Weber.jpg" alt="Jonata Weber"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Jonata Weber</h4>
+                                    <h6 class="card-category text-muted">Desenvolvedor Web na Impulso Network</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/JonataWeber" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <img src="assets/img/faces/Bruno-Souza.jpg" alt="Bruno Souza">
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Bruno Souza</h4>
+                                    <h6 class="card-category text-muted">Analista de Sistemas Pleno</h6>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card card-profile card-plain">
+                        <div class="card-avatar">
+                            <a href="https://twitter.com/weckx" target="_blank"><img src="assets/img/faces/Felipe-Weckx.jpg" alt="Felipe Weckx"></a>
+                        </div>
+                        <div class="card-body">
+                            <a href="#paper-kit">
+                                <div class="author">
+                                    <h4 class="card-title">Felipe Weckx</h4>
+                                    <h6 class="card-category text-muted">CTO na LAB3 DVLP</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-footer text-center">
+                            <a href="https://twitter.com/weckx" target="_blank" class="btn btn-link btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+
+    <div class="team-2 section-image-white" id="programacao" style="padding-bottom:0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto text-center">
+                    <h2 class="title">PROGRAMAÇÃO</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto">
+                    <h4 class="title"><small>Sábado, dia 14 de Abril 2018</small></h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="min-width:130px;">Hórarios</th>
+                                    <th class="text-center">Auditório principal</th>
+                                    <th class="text-center">Auditório 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>8h45 às 9h30</strong></td>
+                                    <td colspan="2" class="text-center">Credenciamento</td>
+                                </tr>
+                                <tr>
+
+                                    <td class="text-center section-dark-blue"><strong>9h30 às 9h45</strong></td>
+                                    <td colspan="2" class="text-center">Abertura do evento</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>9h45 às 10h30</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        <h6>Keynote</h6>
+                                        <div class="card-image col-md-12">
+                                            <div class="card-body">
+                                                <a href="https://twitter.com/dianaarnos" target="_blank" class="author"><img src="assets/img/faces/Diana-Arnos-little.jpg" alt="Diana Arnos"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">Diana Arnos - Desenvolvedora &amp; evangelista PHPWomen</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>10h30 às 11h</strong></td>
+                                    <td colspan="2" class="text-center">Coffee Break</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>11h às 11h40</strong></td>
+                                    <td class="text-left">
+                                        <h6>Investigando a saúde do seu sistema através de logs</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/raph_almeida" target="_blank" class="author"><img src="assets/img/faces/Raphael-de-Almeida-little.jpg" alt="Raphael de Almeida"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Raphael de Almeida - Desenvolvedor Fullstack e Community manager PHPRio</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Em breve</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/merydutra" target="_blank" class="author"><img src="assets/img/faces/Mariana-Nassar-little.jpg" alt="Mariana Nassar"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Mariana Nassar<br/>Analista de sistemas na Infobase</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>11h50 às 12h30</strong></td>
+                                    <td>
+                                        <h6>Em breve</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/cynthiazanoni" target="_blank" class="author"><img src="assets/img/faces/Cynthia-Zanoni-little.jpg" alt="Cynthia Zanoni"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Cynthia Zanoni - Full Stack e PM Latam na Microsoft</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>The QueryFilter concept for filtering models</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/junior_grossi" target="_blank" class="author"><img src="assets/img/faces/Junior-Grossi-little.jpg" alt="Junior Grossi"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Junior Grossi - Software Engineer na InterNACHI e Organizador do PHPMG</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>12h30 às 14h</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        Almoço
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>14h às 14h45</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        <h6>Keynote - On Being a Senior Engineer</h6>
+                                        <div class="card-image col-md-12">
+                                            <div class="card-body">
+                                                <a href="https://twitter.com/sheeri" target="_blank" class="author"><img src="assets/img/faces/Sheeri-Cabral-little.jpg" alt="Sheeri Cabral"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">Sheeri K. Cabral - Senior Database Engineer / MySQL Community Contributor</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>14h55 às 15h35</strong></td>
+                                    <td>
+                                        <h6>ChatOps! Como podemos usar "chatbots" para realizar o trabalho de infra por nós</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/pokemaobr" target="_blank" class="author"><img src="assets/img/faces/Rodrigo-Cardoso-little.jpg" alt="Rodrigo Pokemao Cardoso"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Rodrigo "Pokemao" Cardoso - Community Manager na iMaster</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Em breve</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>15h35 às 16h35</strong></td>
+                                    <td colspan="2" class="text-center">Coffee Break</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>16h35 às 17h15</strong></td>
+                                    <td>
+                                        <h6>Libsodium no PHP 7.2</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/vcampitelli" target="_blank" class="author"><img src="assets/img/faces/Vinicius-Campitelli-little.jpg" alt="Vinicius Campitelli"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Vinicius Campitelli - Coordenador de desenvolvimento na Mediapost</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Jigsaw: sites estáticos e seguros para desenvolvedores ágeis</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/daianealvesrj" target="_blank" class="author"><img src="assets/img/faces/Daiane-Alves-little.jpg" alt="Daiane Alves"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Daiane Alves - Analista de Sistemas na Lyseon Tech e Organizadora PHPRio / PHPWomenRJ</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>17h25 às 18h05</strong></td>
+                                    <td>
+                                        <h6>Criando uma API com Zend Expressive 3</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/jucycabrera" target="_blank" class="author"><img src="assets/img/faces/Juciellen-Cabrera-little.jpg" alt="Juciellen Cabrera"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Juciellen Cabrera - Analista de Sistemas na 4Linux | Rankdone</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Implementação contínua: Jenkins e Laravel</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/philipeph3" target="_blank" class="author"><img src="assets/img/faces/Philipe-Almeida-little.jpg" alt="Philipe Almeida"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Philipe Almeida - Desenvolvedor PHP na Engesoftware e Pesquisador na Universidade de Brasília - UNB</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 ml-auto mr-auto">
+                    <h4 class="title"><small>Domingo, dia 15 de Abril 2018</small></h4>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th class="text-center" style="min-width:130px;">Hórarios</th>
+                                    <th class="text-center" style="width:40%;">Auditório principal</th>
+                                    <th class="text-center">Auditório 2</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>9h30 às 10h10</strong></td>
+                                    <td>
+                                        <h6>Kubernetes e PHP - Experiências na vida real</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/weckx" target="_blank" class="author"><img src="assets/img/faces/Felipe-Weckx-little.jpg" alt="Felipe Weckx"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Felipe Weckx- CTO na LAB3 DVLP</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Os desafios da programação utilizando metadados</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/wilcorrea" target="_blank" class="author"><img src="assets/img/faces/William-Correa-little.jpg" alt="William Correa"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">William Correa - Engenheiro de Software na Fagoc / Organizador do PHP ZM e Analista na Lyseon Tech</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>10h10 às 10h40</strong></td>
+                                    <td colspan="2" class="text-center">Coffee Break</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>10h40 às 11h20</strong></td>
+                                    <td class="text-left">
+                                        <h6>Serverless: Função como Serviço em PHP</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/JonataWeber" target="_blank" class="author"><img src="assets/img/faces/Jonata-Weber-little.jpg" alt="Jonata Weber"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Jonata Weber - Desenvolvedor Web na Impulso Network</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Boas Práticas com o Git </h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/tifannyknox" target="_blank" class="author"><img src="assets/img/faces/Danubia-Barreto-little.jpg" alt="Danubia Barreto"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Danubia Barreto - CEO &amp; Founder na SysForU </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>11h30 às 12h10</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        <h6>Painel das comunidades</h6>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>12h10 às 13h10</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        Almoço
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>13h10 às 13h50</strong></td>
+                                    <td>
+                                        <h6>Desvendando o Symfony 4</h6>
+                                         <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/KaFernandes1989" target="_blank" class="author"><img src="assets/img/faces/Camila-Fernandes-little.jpg" alt="Camila Fernandes"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Camila Fernandes - Programadora PHP na 4Linux</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Compartilhando conhecimento e unindo uma equipe por meio de code review</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/alonsoemacao" target="_blank" class="author"><img src="assets/img/faces/Vinicius-Alonso-little.jpg" alt="Vinicius Alonso"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Vinicius Alonso - Desenvolvedor Backend na CompuFácil</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>14h às 14h40</strong></td>
+                                    <td colspan="2" class="text-center">
+                                        <h6>Painel - A participação da mulher na área de TI</h6>
+                                        <div class="card-image col-md-12">
+                                            <div class="card-body">
+                                                <a href="https://twitter.com/thebeaoliveira" target="_blank" class="author"><img src="assets/img/faces/Beatriz-Oliveira-little.jpg" alt="Beatriz Oliveira"></a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">HOST : Beatriz Oliveira - Analista de Sistemas na Oi</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>14h40 às 15h25</strong></td>
+                                    <td colspan="2" class="text-center">Coffee Break</td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>15h25 às 16h05</strong></td>
+                                    <td>
+                                        <h6>Gerenciamento de filas com RabbitMQ</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/magodoy88" target="_blank" class="author"><img src="assets/img/faces/Marcela-Godoy-little.jpg" alt="Marcela Godoy"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Marcela Godoy - Desenvolvedora backend na Eduzz</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Em breve</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/marcelgsantos" target="_blank" class="author"><img src="assets/img/faces/Marcel-Santos-little.jpg" alt="Marcel dos Santos"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Marcel dos Santos - Desenvolvedor Web Full-Stack / Evangelista PHPSP</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>16h15 às 16h55</strong></td>
+                                    <td>
+                                        <h6>Legado ao DDD</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/leonnleite" target="_blank" class="author"><img src="assets/img/faces/Leonn-Leite-little.jpg" alt="Leonn Leite"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Leonn Leite - Lider Tecnico PHP - Engesoftware</div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <h6>Segurança das aplicações web com o uso de boas práticas em PHP</h6>
+                                        <div class="row">
+                                            <div class="card-image col-md-2">
+                                                <div class="card-body">
+                                                    <a href="https://twitter.com/" target="_blank" class="author"><img src="assets/img/faces/Fernanda-Martin-little.jpg" alt="Fernanda N San Martin"></a>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-10">Fernanda N San Martin - Analista de segurança da informação</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-center section-dark-blue"><strong>17h05 às 17h25</strong></td>
+                                    <td colspan="2" class="text-center">Sorteios + Encerramento</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="cd-section section-white" id="ingressos">
     	<div class="pricing-4 section section-dark-gray">

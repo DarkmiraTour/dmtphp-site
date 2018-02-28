@@ -68,7 +68,7 @@
    > thead > tr > td,
    > tbody > tr > td,
    > tfoot > tr > td{
-        padding: 15px 8px;
+        padding: 15px 25px;
     }
 }
 .table-shopping{
@@ -148,4 +148,8 @@
     &:hover{
         color: $white-color;
     }
+}
+
+#programacao .table-striped tbody > tr:nth-of-type(2n+1) {
+  background-color: rgba(0,0,0,.05);
 }
