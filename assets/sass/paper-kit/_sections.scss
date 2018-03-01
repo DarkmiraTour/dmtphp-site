@@ -14,7 +14,7 @@
 }
 .section-gold{
     background-color: #caac90;
-    color: $white-color;
+    color: $black-color;
 }
 .section-brown{
     background-color: #A59E94;
@@ -91,9 +91,15 @@
         z-index: 2;
     }
 }
-#palestrantes .card .card-body{
+#palestrantes .card .card-body, 
+#palestras .card .card-footer {
     padding-bottom:0 !important;
 } 
-#palestrantes .card .card-footer{
+#palestrantes .card .card-footer,
+#palestras .card .card-footer {
     padding-top:0 !important;  
+}
+#palestras .description {
+    margin-top: 15px;
+    color: #585858;
 }
