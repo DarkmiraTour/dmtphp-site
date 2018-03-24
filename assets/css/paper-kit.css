@@ -156,7 +156,8 @@ blockquote small {
 #programacao h6 a,
 #palestras h6,
 #palestras h6 a {
-  color: #1c9547; }
+  color: #1c9547;
+  font-weight: bold; }
 
 /*     General overwrite     */
 body {
