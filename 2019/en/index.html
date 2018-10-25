@@ -9,7 +9,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-91139113-1');
     </script>
-    <base href="https://php.darkmiratour.rocks/2019/" />
+    <base href="http://localhost/2019/" />
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
     <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
@@ -94,8 +94,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="title">PARTICIPE WITH US</h2>
-                            <h5>It will be 2 days of learning with PHP communities, discovery and interactions</h5>
+                            <h2 class="title">JOIN US AT THE CONFERENCE</h2>
+                            <h5>2 days of learning and sharing with PHP communities</h5>
                         </div>
                     </div>
     				<br /><br />
@@ -107,7 +107,7 @@
     							</div>
     							<div class="description">
     								<h4 class="info-title">Discoveries</h4>
-    								<p class="description">Come and discover the latest features in the PHP ecosystem, best practices, tools and methodologies during these 2 days with more than 30 talks where international and national speakers will share their knowledge.</p>
+    								<p class="description">Come and discover the latest features in the PHP ecosystem, best practices, tools and methodologies during these 2 days with more than 30 talks where international and national speakers will share their knowledge in English and Portuguese.</p>
     							</div>
     						</div>
     					</div>
@@ -118,7 +118,7 @@
     							</div>
     							<div class="description">
     								<h4 class="info-title">Interactions</h4>
-    								<p>Interact with 400 attendees during the various coffee breaks, demonstrations and networking in the 2 communities and business spaces. Share your knowledge in the unconference area where everyone can submit a talk.</p>
+    								<p>Interact with 400 attendees during the various coffee breaks, demonstrations and networking in the 2 communities and sponsors spaces. Share your knowledge in the unconference area where everyone can submit a talk.</p>
     							</div>
     						</div>
     					</div>
@@ -128,13 +128,60 @@
     								<i class="nc-icon nc-money-coins"></i>
     							</div>
     							<div class="description">
-    								<h4 class="info-title">New!!</h4>
-    								<p>After 3 editions in Brasilia, the event moves to the capital of Ceará - Fortaleza. It will be a lot of PHP fun, beach and sun to bring together all the Brazilian and international PHP communities.</p>
+    								<h4 class="info-title">New place!!</h4>
+    								<p>After 3 editions in Brasilia with the PHPDF, a new community will host the next editions. The PHP Com Rapadura community will now host the conference in Fortaleza, capital of the sun and beautiful beaches.</p>
     							</div>
     						</div>
     					</div>
     				</div>
 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cd-section" id="contact-us">
+        <div class="contactus-2" id="onde" style="padding:0; height:500px;">
+            <div id="contactUsMap2" class="big-map"></div>
+
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="card card-contact card-raised">
+                        <div class="card-header header-raised header-primary text-center">
+                            <h4 class="card-title">Where and when will the event take place</h4>
+                        </div>
+                        <form role="form" id="contact-form" method="post">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-danger">
+                                                <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>Fortaleza</strong></h5>
+                                                <p><strong>Fortaleza - CE, Brazil</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-success">
+                                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>June 8-9, 2019</strong></h5>
+                                                <p><strong>Saturday 9:30 until Sunday 17:30</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
@@ -191,5 +238,14 @@
 <!--  Plugins for Select -->
 <script src="assets/js/bootstrap-select.js"></script>
 <script src="assets/js/demo.js"></script>
+
+<!--  Plugins for Map -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=en"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        demo.initContactUsMap2()
+    });
+</script>
 
 </html>
