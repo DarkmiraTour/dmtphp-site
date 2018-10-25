@@ -3,7 +3,7 @@ var big_image;
 demo = {
     initContactUsMap: function(){
 
-        var myLatlng = new google.maps.LatLng(-15.869705, -48.032213);
+        var myLatlng = new google.maps.LatLng(-3.7237817, -38.5034302);
         var mapOptions = {
           zoom: 16,
           center: myLatlng,
@@ -15,7 +15,7 @@ demo = {
 
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title:"Darkmira Tour PHP 2018 na Estacio - Taguatinga Brasília"
+            title:"Darkmira Tour PHP 2019 in Fortaleza, CE - Brazil"
         });
 
         // To add the marker to the map, call setMap();
@@ -25,7 +25,7 @@ demo = {
 
     initContactUsMap2: function(){
 
-        var myLatlng = new google.maps.LatLng(-15.869318, -48.040513);
+        var myLatlng = new google.maps.LatLng(-3.7237817, -38.5034302);
         var mapOptions = {
           zoom: 16,
           center: myLatlng,
@@ -36,8 +36,8 @@ demo = {
         var map = new google.maps.Map(document.getElementById("contactUsMap2"), mapOptions);
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(-15.869705, -48.032213),
-            title:"Darkmira Tour PHP 2018 na Estacio - Taguatinga Brasília"
+            position: new google.maps.LatLng(-3.7237817, -38.5034302),
+            title:"Darkmira Tour PHP 2019 in Fortaleza, CE - Brazil"
         });
 
         // To add the marker to the map, call setMap();
