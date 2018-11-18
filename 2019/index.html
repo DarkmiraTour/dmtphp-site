@@ -140,6 +140,53 @@
         </div>
     </div>
 
+    <div class="cd-section" id="contact-us">
+        <div class="contactus-2" id="onde" style="padding:0; height:500px;">
+            <div id="contactUsMap2" class="big-map"></div>
+
+            <div class="container">
+                <div class="col-md-6">
+                    <div class="card card-contact card-raised">
+                        <div class="card-header header-raised header-primary text-center">
+                            <h4 class="card-title">Onde e quando ocorrerá o evento</h4>
+                        </div>
+                        <form role="form" id="contact-form" method="post">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-danger">
+                                                <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>Fortaleza</strong></h5>
+                                                <p><strong>Fortaleza - CE, Brasil</strong>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="info info-horizontal">
+                                            <div class="icon icon-success">
+                                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="description">
+                                                <h5 class="info-title"><strong>8-9 de Junho 2019</strong></h5>
+                                                <p><strong>Sábado 9:30 até Domingo 17:30</strong></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="cd-section" id="sociais">
         <div class="section section-dark text-center">
             <div class="container">
@@ -191,5 +238,14 @@
 <!--  Plugins for Select -->
 <script src="assets/js/bootstrap-select.js"></script>
 <script src="assets/js/demo.js"></script>
+
+<!--  Plugins for Map -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
+
+<script type="text/javascript">
+    $().ready(function(){
+        demo.initContactUsMap2()
+    });
+</script>
 
 </html>
