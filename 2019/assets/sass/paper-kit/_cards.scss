@@ -635,6 +635,7 @@
 .card-profile{
     margin-top: 30px;
     text-align: center;
+    margin-bottom: 20px;
 
     .card-cover{
         height: 130px;
@@ -644,6 +645,7 @@
     }
 
     .card-body{
+        min-height: 300px !important;
         .card-title{
             margin-top: 5px !important;
         }
