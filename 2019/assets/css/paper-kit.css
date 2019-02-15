@@ -6176,6 +6176,9 @@ video {
 .card .carousel a .fa-angle-right:before {
   padding-left: 3px;
 }
+.card .carousel .a-link {
+  position: relative;
+}
 
 .modal-header {
   border-bottom: 1px solid #DDDDDD;
@@ -9144,12 +9147,26 @@ a.pswp__share--download:hover {
 .card-profile .card-avatar.border-gray {
   border: 4px solid #ccc;
 }
-.card-profile .card-speaker-avatar {
-  max-width: 240px;
-  max-height: 240px;
-  margin: -60px auto 0;
+.card-profile .card-workshop-avatar {
+  max-width: 180px;
+  max-height: 180px;
+  margin: auto auto auto;
   border-radius: 50%;
   overflow: hidden;
+}
+.card-profile .card-workshop-avatar.border-white {
+  border: 4px solid #FFFFFF;
+}
+.card-profile .card-workshop-avatar.border-gray {
+  border: 4px solid #ccc;
+}
+.card-profile .card-speaker-avatar {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .card-profile .card-speaker-avatar.border-white {
   border: 4px solid #FFFFFF;

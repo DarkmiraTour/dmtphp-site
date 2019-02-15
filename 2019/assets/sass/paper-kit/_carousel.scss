@@ -72,15 +72,18 @@
         a{
             position: absolute;
             color: $white-color !important;
-        &:hover{
-            color: $white-color !important;
+            &:hover{
+                color: $white-color !important;
+            }
+            .fa-angle-left:before{
+                padding-right: 3px;
+            }
+            .fa-angle-right:before{
+                padding-left: 3px;
+            }
         }
-        .fa-angle-left:before{
-            padding-right: 3px;
-        }
-        .fa-angle-right:before{
-            padding-left: 3px;
-        }
+        .a-link{
+            position: relative;
         }
     }
 }
