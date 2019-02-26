@@ -9138,6 +9138,13 @@ a.pswp__share--download:hover {
   margin-bottom: 5px;
   margin-top: 5px;
 }
+.card-profile .card-speaker-body .card-title {
+  margin-top: 5px !important;
+}
+.card-profile .card-speaker-body .card-category {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
 .card-profile .card-avatar {
   max-width: 120px;
   max-height: 120px;
