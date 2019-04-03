@@ -25,7 +25,7 @@ demo = {
 
     initContactUsMap2: function(){
 
-        var myLatlng = new google.maps.LatLng(-3.7237817, -38.5034302);
+        var myLatlng = new google.maps.LatLng(-3.768754, -38.478082);
         var mapOptions = {
           zoom: 16,
           center: myLatlng,
@@ -36,7 +36,7 @@ demo = {
         var map = new google.maps.Map(document.getElementById("contactUsMap2"), mapOptions);
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(-3.7237817, -38.5034302),
+            position: new google.maps.LatLng(-3.768754, -38.478082),
             title:"Darkmira Tour PHP 2019 in Fortaleza, CE - Brazil"
         });
 
