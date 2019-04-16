@@ -10203,7 +10203,7 @@ body {
   z-index: 2;
 }
 .project-4 .card[data-background]:after {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0);
 }
 .project-4 .info {
   padding-top: 0 !important;
