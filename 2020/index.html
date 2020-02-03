@@ -1,364 +1,351 @@
 <!doctype html>
 <html lang="pt">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91139113-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-91139113-1');
-    </script>
-    <base href="https://php.darkmiratour.rocks/2020/" />
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91139113-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-91139113-1');
+        </script>
+        <base href="https://php.darkmiratour.rocks/2020/" />
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+        <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
-    <title>Darkmira Tour PHP 2020 - Segurança e Qualidade nos ecossistemas PHP</title>
+        <title>Darkmira Tour PHP 2020 - Segurança e Qualidade nos ecossistemas PHP</title>
 
-    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-    <meta name="viewport" content="width=device-width" />
+        <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+        <meta name="viewport" content="width=device-width" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet"/>
-    <link href="assets/css/demo.css" rel="stylesheet" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="assets/css/paper-kit.css?v=2.1.20" rel="stylesheet"/>
+        <link href="assets/css/demo.css" rel="stylesheet" />
 
-    <!--     Fonts and icons     -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet">
+        <!--     Fonts and icons     -->
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+        <link href="assets/css/nucleo-icons.css" rel="stylesheet">
 
-</head>
-<body>
-	<nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
-		<div class="container">
-			<div class="navbar-translate">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">Darkmira Tour PHP 2020</a>
-				</div>
-				<button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-					<span class="navbar-toggler-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse">
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Edições passadas</a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
-                            <a class="dropdown-item" href="https://php.darkmiratour.rocks/2017"><i class="nc-icon nc-tile-56"></i>&nbsp; 2017</a>
-                            <a class="dropdown-item" href="https://php.darkmiratour.rocks/2018"><i class="nc-icon nc-tile-56"></i>&nbsp; 2018</a>
-                            <a class="dropdown-item" href="https://php.darkmiratour.rocks/2019"><i class="nc-icon nc-tile-56"></i>&nbsp; 2019</a>
-                        </ul>
-					</li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html#evento" data-scroll="true" href="javascript:void(0)">Evento</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="sponsors.html" data-scroll="true">Patrocínio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0 7px 10px;"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.facebook.com/pg/darkmiratour/posts/" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0;"><i class="fa fa-facebook"></i></a>
-                        <a href="https://php.darkmiratour.rocks/2020/" class="btn btn-link btn-neutral" style="padding: 7px 0;"><img src="assets/img/pt-br.png" alt="Português" /></a>
-                        <a href="https://php.darkmiratour.rocks/2020/en/" class="btn btn-link btn-neutral" style="padding: 7px 0;"><img src="assets/img/en.png" alt="English" /></a>
-                    </li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
-	<div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/img_1.min.png');">
-		<div class="filter"></div>
-		<div class="content-center">
-			<div class="container">
-	            <div class="motto">
-	            	<object data="assets/img/logo/dm_logo_white.svg" width="300" height="250" type="image/svg+xml">
-						<img src="assets/img/logo/dm_logo_white.svg">
-					</object>
-                    <div style="margin-top:50px; margin-bottom:30px;">
-                        <p style="font-size: 1.4em; margin-bottom:10px; text-shadow: #333 1px 1px 3px;"><strong>5, 6 e 7 de Junho de 2020, Fortaleza/CE</strong></p>
-                        <h1 style="font-weight:bold; margin:0; text-shadow: #333 1px 1px 5px;">Darkmira Tour PHP 2020</h1>
-                        <p style="font-size:24px; margin-top: 10px; text-shadow: #000 1px 1px 2px;">O evento imperdível sobre<br/>Segurança e qualidade nos ecossistemas PHP</p>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent nav-down" color-on-scroll="500">
+            <div class="container">
+                <div class="navbar-translate">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">Darkmira Tour PHP 2020</a>
                     </div>
-                    <a href="https://dmtphp.io/dmt19-fotos" target="_blank" class="btn btn-outline-neutral btn-round">Veja as fotos de 2019</a>
-                    <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-outline-neutral btn-round">Siga nós no Twitter</a>
-                    <a href="https://t.me/darkmiratour" target="_blank" class="btn btn-outline-neutral btn-round">Junte-se a nós no Telegram</a>
-	            </div>
-	        </div>
-		</div>
+                    <button class="navbar-toggler navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                        <span class="navbar-toggler-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Edições passadas</a>
+                            <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
+                                <a class="dropdown-item" href="https://php.darkmiratour.rocks/2017"><i class="nc-icon nc-tile-56"></i>&nbsp; 2017</a>
+                                <a class="dropdown-item" href="https://php.darkmiratour.rocks/2018"><i class="nc-icon nc-tile-56"></i>&nbsp; 2018</a>
+                                <a class="dropdown-item" href="https://php.darkmiratour.rocks/2019"><i class="nc-icon nc-tile-56"></i>&nbsp; 2019</a>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#evento" data-scroll="true" href="javascript:void(0)">Evento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sponsors.html" data-scroll="true">Patrocínio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0 7px 10px;"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/pg/darkmiratour/posts/" target="_blank" class="btn btn-link btn-neutral" style="padding: 7px 0;"><i class="fa fa-facebook"></i></a>
+                            <a href="https://php.darkmiratour.rocks/2020/" class="btn btn-link btn-neutral" style="padding: 7px 0;"><img src="assets/img/pt-br.png" alt="Português" /></a>
+                            <a href="https://php.darkmiratour.rocks/2020/en/" class="btn btn-link btn-neutral" style="padding: 7px 0;"><img src="assets/img/en.png" alt="English" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-    </div>
+        <div class="page-header" data-parallax="true" style="background-image: url('assets/img/sections/img_1.min.png');">
+            <div class="filter"></div>
+            <div class="content-center">
+                <div class="container">
+                    <div class="motto">
+                        <object data="assets/img/logo/dm_logo_white.svg" width="300" height="250" type="image/svg+xml">
+                            <img src="assets/img/logo/dm_logo_white.svg">
+                        </object>
+                        <div style="margin-top:50px; margin-bottom:30px;">
+                            <p style="font-size: 1.4em; margin-bottom:10px; text-shadow: #333 1px 1px 3px;"><strong>5, 6 e 7 de Junho de 2020, Fortaleza/CE</strong></p>
+                            <h1 style="font-weight:bold; margin:0; text-shadow: #333 1px 1px 5px;">Darkmira Tour PHP 2020</h1>
+                            <p style="font-size:24px; margin-top: 10px; text-shadow: #000 1px 1px 2px;">O evento imperdível sobre<br/>Segurança e qualidade nos ecossistemas PHP</p>
+                        </div>
+                        <a href="https://dmtphp.io/dmt19-fotos" target="_blank" class="btn btn-outline-neutral btn-round">Veja as fotos de 2019</a>
+                        <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-outline-neutral btn-round">Siga nós no Twitter</a>
+                        <a href="https://t.me/darkmiratour" target="_blank" class="btn btn-outline-neutral btn-round">Junte-se a nós no Telegram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="cd-section section-white" id="evento">
-        <div class="wrapper">
-            <div class="section text-center landing-section">
+        <div class="cd-section section-white" id="evento">
+            <div class="wrapper">
+                <div class="section text-center landing-section">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 ml-auto mr-auto">
+                                <h2 class="title">PARTICIPE CONOSCO</h2>
+                                <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5>
+                            </div>
+                        </div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="info">
+                                    <div class="icon icon-success">
+                                        <i class="nc-icon nc-bulb-63"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Descobertas</h4>
+                                        <p class="description">Venha descobrir as últimas novidades do ecossistema PHP, boas práticas, ferramentas e metodologias durante esses 3 dias com mais de 30 palestras onde palestrantes internacionais e nacionais compartilharão os seus conhecimentos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info">
+                                    <div class="icon icon-success">
+                                        <i class="nc-icon nc-chat-33"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Interação</h4>
+                                        <p>Interaja com os 400 participantes durante os vários coffee breaks, demonstrações e networking nos 2 espaços business e comunidades. Compartilhe seu conhecimento através da área de desconferencias onde todos poderão submeter um assunto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="info">
+                                    <div class="icon icon-success">
+                                        <i class="nc-icon nc-money-coins"></i>
+                                    </div>
+                                    <div class="description">
+                                        <h4 class="info-title">Novidade!!</h4>
+                                        <p>Desde a quarta edição (2019) o evento acontece na capital cearense (Fortaleza), PHPraia, calor e sol para reunir todas as comunidades PHP do Brasil. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-4 section section-dark">
+            <div class="container">
+                <hr/>
+                <div class="row">
+                    <div class="col-md-12 ml-auto mr-auto text-center">
+                        <h2 class="title">Keynotes</h2>
+                        <h5 class="description">Dessa vez são 2 keynotes internacionais, isso mesmo, 2.</h5>
+                    </div>
+                </div>
+                <div class="space-top"></div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4 ml-auto">
+                        <div class="card" data-background="image" style="background-image: url('assets/img/faces/nicolas-grekas.jpg')"></div>
+                    </div>
+                    <div class="col-md-8 mr-auto">
+                        <div class="card card-plain">
+                            <div class="card-header" style="background-color: transparent !important;">
+                                <a href="#nicolasGrekas">
+                                    <h2 class="card-title mt-1">Nicolas Grekas</h2>
+                                </a>
+                                <h6 class="card-category">Paris, França</h6>
+                                <p class="card-description" style="font-size: 1.1rem;">
+                                    Nicolas trabalha como General Manager no Symfony, com dois lados em suas contribuições. No lado open-source, ele está submetendo novas funcionalidades e correções de bugs nos últimos 5 anos. <br>
+                                    Ele faz um grande esforço para tornar o Symfony rápido, fácil de usar e bem projetado, tudo ao mesmo tempo.
+                                    <br><br>
+                                    No lado comercial, ele lidera a ambição de criar uma empresa sustentável, apoiando e apoiada diretamente pelo ecossistema Symfony. Anteriormente, ele trabalhou como CTO do Blackfire.io, um profiler para PHP que você definitivamente deveria conhecer.
+                                    <br><br>
+                                    Siga o Nicolas no Twitter: <a href="https://twitter.com/nicolasgrekas" class="text-white" target="_blank">@nicolasgrekas</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/><hr/><br/>
+                <div class="row">
+                    <div class="col-md-8 mr-auto">
+                        <div class="card card-plain">
+                            <div class="card-header" style="background-color: transparent !important;">
+                                <a href="#michelleSanver">
+                                    <h2 class="card-title mt-1">Michelle Sanver</h2>
+                                </a>
+                                <h6 class="card-category">Zürich, Suiça</h6>
+                                <p class="card-description" style="font-size: 1.1rem;">
+                                    Michelle é uma nerd colorida apaixonada por códigos e, com mais de 15 anos de experiência em PHP, está ansiosa para compartilhar seu amplo conhecimento.
+                                    <br><br>
+                                    Ela trabalha na Liip, uma empresa autogestionada com sede na Suíça. Na Liip, ela orgulhosamente faz muitas coisas, incluindo a organização de eventos internos de caminhada!
+                                    <br>
+                                    Seu principal trabalho diário é como desenvolvedora. Envolve uma API em constante mudança para o maior varejista da Suíça, usando principalmente Symfony, ElasticSearch e RabbitMQ.
+                                    <br><br>
+                                    Siga a Michelle no Twitter: <a href="https://twitter.com/michellesanver" class="text-white" target="_blank">@michellesanver</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <div class="card" data-background="image" style="background-image: url('assets/img/faces/michelle-sanver.jpg')"></div>
+                    </div>
+                </div>
+                <br/><hr/>
+            </div>
+        </div>
+        <div class="pricing-3 section-white" id="sponsors" style="background-color: #eee;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 ml-auto mr-auto text-center">
+                        <h2 class="title">Nossos Patrocinadores</h2>
+                        <h5 class="description">A parceria é forte, o apoio é sensacional e a gratidão é eterna.</h5>
+                    </div>
+                </div>
+                <div class="space-top"></div>
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4">
+                        <div class="card card-pricing">
+                            <div class="card-body">
+                                <h4 class="card-category"><strong>Patrocínio Ouro</strong></h4>
+                                <div class="card-icon"  style="min-height: 220px;">
+                                    <img src="assets/img/sponsors/blackfire.png" alt="Blackfire" style="width: 80%">
+                                </div>
+                                <h3 class="card-title">Blackfire.io</h3>
+                                <p class="card-description"></p>
+                                <div class="card-footer">
+                                    <a href="https://blackfire.io" target="_blank" class="btn btn-success btn-round card-link">Conheça a Blackfire</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="text-center">
+                            <a href="sponsors.html" class="btn btn-dark btn-round card-link"><strong>Conheça Nossos Patrocinadores</strong></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cd-section" id="contact-us">
+            <div class="contactus-2" id="onde" style="padding:0; height:500px;">
+                <div id="contactUsMap2" class="big-map"></div>
+                <div class="container">
+                    <div class="col-md-6">
+                        <div class="card card-contact card-raised">
+                            <div class="card-header header-raised header-primary text-center">
+                                <h4 class="card-title">Onde e quando ocorrerá o evento</h4>
+                            </div>
+                            <form role="form" id="contact-form" method="post">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="info info-horizontal">
+                                                <div class="icon icon-danger">
+                                                    <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <h5 class="info-title"><strong>Fortaleza</strong></h5>
+                                                    <p><strong>Fortaleza - CE, Brasil</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="info info-horizontal">
+                                                <div class="icon icon-success">
+                                                    <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="description">
+                                                    <h5 class="info-title"><strong>05, 06 e 07 de Junho 2020</strong></h5>
+                                                    <p><strong>Sexta-feira 8:00 até Domingo 17:30</strong></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cd-section" id="sociais">
+            <div class="section section-dark text-center">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto">
-                            <h2 class="title">PARTICIPE CONOSCO</h2>
-                            <h5>Serão 3 dias de muita aprendizagem com as comunidades PHP, descobertas e interações</h5>
+                            <h2 class="title">Siga nos e compartilhe com o <a class="text-success" href="https://twitter.com/search?q=%23DarkmiraTour&src=typd" target="_blank">#DarkmiraTour</a></h2>
                         </div>
+                        <br/>
                     </div>
-    				<br /><br />
-    				<div class="row">
-    					<div class="col-md-4">
-    						<div class="info">
-    							<div class="icon icon-success">
-    								<i class="nc-icon nc-bulb-63"></i>
-    							</div>
-    							<div class="description">
-    								<h4 class="info-title">Descobertas</h4>
-    								<p class="description">Venha descobrir as últimas novidades do ecossistema PHP, boas práticas, ferramentas e metodologias durante esses 3 dias com mais de 30 palestras onde palestrantes internacionais e nacionais compartilharão os seus conhecimentos.</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-4">
-    						<div class="info">
-    							<div class="icon icon-success">
-    								<i class="nc-icon nc-chat-33"></i>
-    							</div>
-    							<div class="description">
-    								<h4 class="info-title">Interação</h4>
-    								<p>Interaja com os 400 participantes durante os vários coffee breaks, demonstrações e networking nos 2 espaços business e comunidades. Compartilhe seu conhecimento através da área de desconferencias onde todos poderão submeter um assunto.</p>
-    							</div>
-    						</div>
-    					</div>
-    					<div class="col-md-4">
-    						<div class="info">
-    							<div class="icon icon-success">
-    								<i class="nc-icon nc-money-coins"></i>
-    							</div>
-    							<div class="description">
-    								<h4 class="info-title">Novidade!!</h4>
-    								<p>Desde a quarta edição (2019) o evento acontece na capital cearense (Fortaleza), PHPraia, calor e sol para reunir todas as comunidades PHP do Brasil. </p>
-    							</div>
-    						</div>
-    					</div>
-    				</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="project-4 section section-dark">
-        <div class="container">
-            <hr>
-            <div class="row">
-                <div class="col-md-12 ml-auto mr-auto text-center">
-                    <h2 class="title">Keynotes</h2>
-                    <h5 class="description">Dessa vez são 2 keynotes internacionais, isso mesmo, 2.</h5>
-                </div>
-            </div>
-            <div class="space-top"></div>
-            <br>
-            <div class="row">
-                <div class="col-md-4 ml-auto">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/faces/nicolas-grekas.jpg')">
-                    </div>
-                </div>
-
-                <div class="col-md-8 mr-auto">
-                    <div class="card card-plain">
-                        <div class="card-header" style="background-color: transparent !important;">
-                            <a href="#nicolasGrekas">
-                                <h2 class="card-title mt-1">Nicolas Grekas</h2>
-                            </a>
-                            <h6 class="card-category">Paris, França</h6>
-
-                            <p class="card-description" style="font-size: 1.1rem;">
-                                Nicolas trabalha como General Manager no Symfony, com dois lados em suas contribuições. No lado open-source, ele está submetendo novas funcionalidades e correções de bugs nos últimos 5 anos. <br>
-                                Ele faz um grande esforço para tornar o Symfony rápido, fácil de usar e bem projetado, tudo ao mesmo tempo.
-                                <br><br>
-                                No lado comercial, ele lidera a ambição de criar uma empresa sustentável, apoiando e apoiada diretamente pelo ecossistema Symfony. Anteriormente, ele trabalhou como CTO do Blackfire.io, um profiler para PHP que você definitivamente deveria conhecer.
-                                <br><br>
-                                Siga o Nicolas no Twitter: <a href="https://twitter.com/nicolasgrekas" class="text-white" target="_blank">@nicolasgrekas</a>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p>
+                                <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
+                                <a href="https://www.facebook.com/pg/darkmiratour/posts/" target="_blank" class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></a>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <br/><hr /><br/>
-
-            <div class="row">
-                <div class="col-md-8 mr-auto">
-                    <div class="card card-plain">
-                        <div class="card-header" style="background-color: transparent !important;">
-                            <a href="#michelleSanver">
-                                <h2 class="card-title mt-1">Michelle Sanver</h2>
-                            </a>
-                            <h6 class="card-category">Zürich, Suiça</h6>
-
-                            <p class="card-description" style="font-size: 1.1rem;">
-                                Michelle é uma nerd colorida apaixonada por códigos e, com mais de 15 anos de experiência em PHP, está ansiosa para compartilhar seu amplo conhecimento.
-                                <br><br>
-                                Ela trabalha na Liip, uma empresa autogestionada com sede na Suíça. Na Liip, ela orgulhosamente faz muitas coisas, incluindo a organização de eventos internos de caminhada!
-                                <br>
-                                Seu principal trabalho diário é como desenvolvedora. Envolve uma API em constante mudança para o maior varejista da Suíça, usando principalmente Symfony, ElasticSearch e RabbitMQ.
-
-                                <br><br>
-                                Siga a Michelle no Twitter: <a href="https://twitter.com/michellesanver" class="text-white" target="_blank">@michellesanver</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 ml-auto">
-                    <div class="card" data-background="image" style="background-image: url('assets/img/faces/michelle-sanver.jpg')">
-                    </div>
-                </div>
-            </div>
-            <br/><hr />
         </div>
-    </div>
 
-    <div class="pricing-3 section-white" id="sponsors" style="background-color: #eee;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 ml-auto mr-auto text-center">
-                    <h2 class="title">Nossos Patrocinadores</h2>
-                    <h5 class="description">A parceria é forte, o apoio é sensacional e a gratidão é eterna.</h5>
-                </div>
-            </div>
-            <div class="space-top"></div>
-            <div class="row justify-content-md-center">
-                <div class="col-md-4">
-                    <div class="card card-pricing">
-                        <div class="card-body">
-                            <h4 class="card-category"><strong>Patrocínio Ouro</strong></h4>
-                            <div class="card-icon"  style="min-height: 220px;">
-                                <img src="assets/img/sponsors/blackfire.png" alt="Blackfire" style="width: 80%">
-                            </div>
-                            <h3 class="card-title">Blackfire.io</h3>
-                            <p class="card-description">
-                            </p>
-                            <div class="card-footer">
-                                <a href="https://blackfire.io" target="_blank" class="btn btn-success btn-round card-link">Conheça a Blackfire</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="text-center">
-                        <a href="sponsors.html" class="btn btn-dark btn-round card-link"><strong>Conheça Nossos Patrocinadores</strong></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cd-section" id="contact-us">
-        <div class="contactus-2" id="onde" style="padding:0; height:500px;">
-            <div id="contactUsMap2" class="big-map"></div>
-
-            <div class="container">
-                <div class="col-md-6">
-                    <div class="card card-contact card-raised">
-                        <div class="card-header header-raised header-primary text-center">
-                            <h4 class="card-title">Onde e quando ocorrerá o evento</h4>
-                        </div>
-                        <form role="form" id="contact-form" method="post">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="info info-horizontal">
-                                            <div class="icon icon-danger">
-                                                <i class="nc-icon nc-pin-3" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="description">
-                                                <h5 class="info-title"><strong>Fortaleza</strong></h5>
-                                                <p><strong>Fortaleza - CE, Brasil</strong>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="info info-horizontal">
-                                            <div class="icon icon-success">
-                                                <i class="nc-icon nc-time-alarm" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="description">
-                                                <h5 class="info-title"><strong>05, 06 e 07 de Junho 2020</strong></h5>
-                                                <p><strong>Sexta-feira 8:00 até Domingo 17:30</strong></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="cd-section" id="sociais">
-        <div class="section section-dark text-center">
+        <footer class="footer section-dark">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 ml-auto mr-auto">
-                        <h2 class="title">Siga nos e compartilhe com o <a class="text-success" href="https://twitter.com/search?q=%23DarkmiraTour&src=typd" target="_blank">#DarkmiraTour</a></h2>
-                    </div>
-                    <br/>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <p>
-                            <a href="https://twitter.com/DarkmiraTour" target="_blank" class="btn btn-just-icon btn-twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/pg/darkmiratour/posts/" target="_blank" class="btn btn-just-icon btn-facebook"><i class="fa fa-facebook"></i></a>
-                        </p>
+                    <nav class="footer-nav">
+                        <ul>
+                            <li><a href="index.html">Darkmira Tour PHP 2020</a></li>
+                        </ul>
+                    </nav>
+                    <div class="credits ml-auto">
+                        <span class="copyright">
+                            Made with <i class="fa fa-heart heart"></i> with Paper Kit 2 Pro
+                        </span>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        </footer>
 
-	<footer class="footer section-dark">
-		<div class="container">
-			<div class="row">
-				<nav class="footer-nav">
-					<ul>
-						<li><a href="index.html">Darkmira Tour PHP 2020</a></li>
-					</ul>
-				</nav>
-				<div class="credits ml-auto">
-					<span class="copyright">
-						Made with <i class="fa fa-heart heart"></i> with Paper Kit 2 Pro
-					</span>
-				</div>
-			</div>
-		</div>
-	</footer>
-</body>
+        <!-- Core JS Files -->
+        <script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
+        <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
+        <script src="assets/js/popper.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
-<!-- Core JS Files -->
-<script src="assets/js/jquery-3.2.1.min.js" type="text/javascript"></script>
-<script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
-<script src="assets/js/popper.js" type="text/javascript"></script>
-<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
+        <script src="assets/js/paper-kit.js?v=2.1.0"></script>
 
-<!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
-<script src="assets/js/paper-kit.js?v=2.1.0"></script>
+        <!--  Plugins for Select -->
+        <script src="assets/js/bootstrap-select.js"></script>
+        <script src="assets/js/demo.js"></script>
 
-<!--  Plugins for Select -->
-<script src="assets/js/bootstrap-select.js"></script>
-<script src="assets/js/demo.js"></script>
+        <!--  Plugins for Map -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
 
-<!--  Plugins for Map -->
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfQnvmEyR79sLYapgptpme-I2c9n-vf1Q&language=pt-br"></script>
+        <script type="text/javascript">
+            $().ready(function(){
+                demo.initContactUsMap2()
+            });
+        </script>
 
-<script type="text/javascript">
-    $().ready(function(){
-        demo.initContactUsMap2()
-    });
-</script>
+    </body>
 </html>
