@@ -12,24 +12,25 @@
                     form.reportValidity();
                     return;
                 }
-                form.classList.remove('was-validated');
-                const formData = new FormData(form);
 
-                fetch('https://dmtphp.io/widgets/ticket.php?event=darkmira&bgcolor=151f20&color=fff', {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/json, application/xml, text/plain, text/html, *.*',
-                        'Content-Type': 'multipart/form-data',
-                    },
-                    body: formData,
+                var data = {
+                    "ticket[1][fname]" : $('input#first-name').val(),
+                    "ticket[1][lname]" : $('input#last-name').val(),
+                    "ticket[1][email]" : $('input#email').val(),
+                    "validate" : true
+                }
+
+                $.ajax({
+                  method: "POST",
+                  url: "https://dmtphp.io/widgets/ticket.php?event=darkmira&bgcolor=151f20&color=fff",
+                  data: data
+                }).done(function() {
+                   $('#alert-success-sign-up').removeClass('d-none');
+                   $('#form-sign-up').addClass('d-none');
+                }).fail(function() {
+                   $('#alert-error-sign-up').removeClass('d-none');
+                   $('#form-sign-up').addClass('d-none');
                 })
-                .then(data => {
-                    $('#alert-success-sign-up').removeClass('d-none');
-                    $('#form-sign-up').addClass('d-none');
-                })
-                .catch((error) => {
-                    console.log('Error:', error);
-                });
 
             }, false);
         });
