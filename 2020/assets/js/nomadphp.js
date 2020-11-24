@@ -21,12 +21,20 @@
                 }
 
                 $.ajax({
-                  method: "POST",
-                  url: "https://dmtphp.io/widgets/ticket.php?event=darkmira&bgcolor=151f20&color=fff",
-                  data: data
-                }).done(function() {
-                   $('#alert-success-sign-up').removeClass('d-none');
-                   $('#form-sign-up').addClass('d-none');
+                    method: "POST",
+                    url: "https://dmtphp.io/widgets/ticket.php?event=darkmira&bgcolor=151f20&color=fff",
+                    data: data
+                }).done(function(content) {
+                    var pattern = '/The from address does not match a verified Sender Identity/g';
+                    var match = content.match('The from address does not match a verified Sender Identity');
+
+                    if (null == match) {
+                        $('#alert-success-sign-up').removeClass('d-none');
+                        $('#form-sign-up').addClass('d-none');
+                    } else {
+                        $('#alert-error-sign-up').removeClass('d-none');
+                        $('#form-sign-up').addClass('d-none');
+                    }
                 }).fail(function() {
                    $('#alert-error-sign-up').removeClass('d-none');
                    $('#form-sign-up').addClass('d-none');
