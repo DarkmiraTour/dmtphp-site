@@ -24,7 +24,8 @@
                     body: formData,
                 })
                 .then(data => {
-                    console.log('Success:', data);
+                    $('#alert-success-sign-up').removeClass('d-none');
+                    $('#form-sign-up').addClass('d-none');
                 })
                 .catch((error) => {
                     console.log('Error:', error);

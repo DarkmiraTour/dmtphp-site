@@ -404,7 +404,7 @@
                         <h2 class="title">Para assistir aos 2 dias de palestras, basta criar uma conta <b>gratuita</b> na plataforma da nossa parceira NomadPHP.</h2>
 
                         <br/>
-                        <p class="description text-gray">Neste ano as palestras serão totalmente gratuita, você só pagará pelo workshop (R$ 180) que quiser participar.<br> Todo o evento será online, então nenhuma atividade será presencial.</p>
+                        <p class="description text-gray">Neste ano as palestras serão totalmente gratuitas, você só pagará pelo workshop (R$ 180) que quiser participar.<br> Todo o evento será online, então nenhuma atividade será presencial.</p>
                         <p class="description text-danger"><b><em>Atenção, para comprar o workshop entre <a href="https://dmtphp.io/workshop-2020"> neste link</a> </em></b></p>
                     </div>
                 </div>
@@ -422,7 +422,7 @@
                                                 <ul>
                                                     <li><b>Acesso</b> aos 2 dias de palestras</li>
                                                     <li><b>Acesso</b> aos chats de aúdio</li>
-                                                    <li><b>Participaçào</b> aos sorteios de brindes</li>
+                                                    <li><b>Participação</b> aos sorteios de brindes</li>
                                                     <li><b>Certificado</b> de participação de 20 horas</li>
                                                     <li><b>Disponibilidade</b> até o dia do evento</li>
                                                 </ul>
@@ -430,24 +430,30 @@
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
-                                    <div class="col-md-7">
-                                        <form action="#" method="post" id="form-sign-up" class="needs-validation" novalidate>
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="first-name">Nome</label>
-                                                <input type="text" id="first-name" name="ticket[1][fname]" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="last-name">Sobrenome</label>
-                                                <input type="text" id="last-name" name="ticket[1][lname]" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="email">Email</label>
-                                                <input type="email" id="email" name="ticket[1][email]" class="form-control" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <input type="hidden" name="validate" value="true">
-                                            <p class="text-white">Ao me registrar, eu confirmo que tenho permissão para criar uma conta para as informações acima mencionadas, e concordo com os <a href="https://nomadphp.com/static/terms" target="_blank">termos e condições</a> do Nomad PHP e com a <a href="https://nomadphp.com/static/terms" target="_blank">política de privacidade</a>.</p><br>
-                                            <button type="submit" id="btn-sign-up" class="btn btn-success d-block ml-auto">Inscreva-se</button>
-                                        </form>
+                                    <div class="col-md-7 d-flex">
+                                        <div id="alert-success-sign-up" class="alert alert-success align-self-center d-none" style="background-color:  #1d954a;">
+                                            <h3 class="alert-heading m-3">Parabéns!</h3>
+                                            <h5 class="text-white m-3">Sua inscrição para os 2 dias de evento foi realizada com sucesso. Você irá <b>receber um email</b> da nossa parceira NomadPHP com as suas credenciais para acessar a plataforma.</h5>
+                                        </div>
+                                        <div id="form-sign-up">
+                                            <form action="#" method="post" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="first-name">Nome</label>
+                                                    <input type="text" id="first-name" name="ticket[1][fname]" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="last-name">Sobrenome</label>
+                                                    <input type="text" id="last-name" name="ticket[1][lname]" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="email">Email</label>
+                                                    <input type="email" id="email" name="ticket[1][email]" class="form-control" aria-describedby="emailHelp" required>
+                                                </div>
+                                                <input type="hidden" name="validate" value="true">
+                                                <p class="text-white">Ao me registrar, eu confirmo a permissão para criar uma conta para as informações acima mencionadas, e concordo com os <a href="https://nomadphp.com/static/terms" target="_blank">termos e condições</a> do Nomad PHP e com a <a href="https://nomadphp.com/static/terms" target="_blank">política de privacidade</a>.</p><br>
+                                                <button type="submit" id="btn-sign-up" class="btn btn-success d-block ml-auto">Inscreva-se</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

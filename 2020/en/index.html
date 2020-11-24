@@ -307,25 +307,31 @@
                                         </div>
                                     </div>
                                     <div class="col-md-1"></div>
-                                    <div class="col-md-7">
-                                        <h5 class="text-white text-left mb-3">Fill out the form to create a FREE account on NomadPHP</h5>
-                                        <form action="https://dmtphp.io/widgets/ticket.php?event=darkmira&bgcolor=151f20&color=fff" method="post">
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="first-name">Firstname</label>
-                                                <input type="text" id="first-name" name="ticket[1][fname]" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="last-name">Lastname</label>
-                                                <input type="text" id="last-name" name="ticket[1][lname]" class="form-control" required>
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="d-block text-white text-left" for="email">Email</label>
-                                                <input type="email" id="email" name="ticket[1][email]" class="form-control" aria-describedby="emailHelp" required>
-                                            </div>
-                                            <input type="hidden" name="validate" value="true">
-                                            <p class="text-white">By registering I confirm I have permission to create accouonts for the above, and agree to Nomad PHP's <a href="https://nomadphp.com/static/terms" target="_blank">terms and conditions</a> and <a href="https://nomadphp.com/static/privacy" target="_blank">privacy policy</a>.</p><br>
-                                            <button type="submit" class="btn btn-success btn-lg d-block ml-auto">Sign up</button>
-                                        </form>
+                                    <div class="col-md-7 d-flex">
+                                        <div id="alert-success-sign-up" class="alert alert-success align-self-center d-none" style="background-color:  #1d954a;">
+                                            <h3 class="alert-heading m-3">Congratulations!</h3>
+                                            <h5 class="text-white m-3">Your registration for 2 days of talks was successful. You will <b>receive an email</b> from our partner NomadPHP with your credentials to access the platform.</h5>
+                                        </div>
+                                        <div id="form-sign-up">
+                                            <h5 class="text-white text-left mb-3">Fill out the form to create a FREE account on NomadPHP</h5>
+                                            <form action="#" method="post" class="needs-validation" novalidate>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="first-name">Firstname</label>
+                                                    <input type="text" id="first-name" name="ticket[1][fname]" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="last-name">Lastname</label>
+                                                    <input type="text" id="last-name" name="ticket[1][lname]" class="form-control" required>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="d-block text-white text-left" for="email">Email</label>
+                                                    <input type="email" id="email" name="ticket[1][email]" class="form-control" aria-describedby="emailHelp" required>
+                                                </div>
+                                                <input type="hidden" name="validate" value="true">
+                                                <p class="text-white">By registering I confirm I have permission to create accouonts for the above, and agree to Nomad PHP's <a href="https://nomadphp.com/static/terms" target="_blank">terms and conditions</a> and <a href="https://nomadphp.com/static/privacy" target="_blank">privacy policy</a>.</p><br>
+                                                <button type="submit" class="btn btn-success btn-lg d-block ml-auto">Sign up</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -507,6 +513,7 @@
         <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
         <script src="assets/js/popper.js" type="text/javascript"></script>
         <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="assets/js/nomadphp.js" type="text/javascript"></script>
 
         <!-- Control Center for Paper Kit: parallax effects, scripts for the example pages etc -->
         <script src="assets/js/paper-kit.js?v=2.1.0"></script>
